@@ -1,5 +1,6 @@
 import axios from 'axios';
-let url = 'http://localhost:3001';
+// let url = 'http://localhost:3001';
+let url = 'https://amztownbackend.herokuapp.com';
 
 const getCodes = async data => {
   let response;

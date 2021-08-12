@@ -1,7 +1,8 @@
-import axios from "axios";
-let url = "http://localhost:3001";
+import axios from 'axios';
+// let url = "http://localhost:3001";
+let url = 'https://amztownbackend.herokuapp.com';
 
-const signin = async (data) => {
+const signin = async data => {
   let response;
   response = await axios.post(`${url}/api/users/login`, data);
 
@@ -9,7 +10,7 @@ const signin = async (data) => {
   return response;
 };
 
-const signup = async (data) => {
+const signup = async data => {
   let response;
   response = await axios.post(`${url}/api/users/register`, data);
 
